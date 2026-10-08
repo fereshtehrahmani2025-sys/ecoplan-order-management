@@ -13,6 +13,10 @@ public class Main {
         ArrayList<Order>orders=new ArrayList<>();
         orders.add(order1);
         orders.add(order2);
+        order1.setStatus(OrderStatus.SHIPPED);
+        if (order1.getStatus()==OrderStatus.SHIPPED){
+            System.out.println("Order 101 has been shipped");
+        }
         System.out.println("Total Orders: "+orders.size());
         for (Order order : orders){
             order.printInfo();
