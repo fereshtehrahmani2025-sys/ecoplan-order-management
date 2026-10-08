@@ -16,6 +16,7 @@ public class Main {
         System.out.println("Total Orders: "+orders.size());
         for (Order order : orders){
             order.printInfo();
+            System.out.println("Order Total: "+order.getTotal());
         }
     }
 }
