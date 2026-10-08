@@ -8,7 +8,7 @@ public class Customer {
         this.email=email;
     }
     public void printInfo(){
-        System.out.println("ID: "+id);
+        System.out.println("Customer ID: "+id);
         System.out.println("Name: "+name);
         System.out.println("Email: "+email);
     }

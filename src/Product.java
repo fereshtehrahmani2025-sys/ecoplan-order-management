@@ -8,7 +8,7 @@ public class Product {
         this.price=price;
     }
     public void printInfo(){
-        System.out.println("ID: "+id);
+        System.out.println("Product ID: "+id);
         System.out.println("Name: "+name);
         System.out.println("Price: "+price);
     }
