@@ -12,4 +12,8 @@ public class Product {
         System.out.println("Name: "+name);
         System.out.println("Price: "+price);
     }
+
+    public double getPrice() {
+        return price;
+    }
 }

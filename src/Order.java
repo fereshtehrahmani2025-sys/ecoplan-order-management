@@ -12,4 +12,7 @@ public class Order {
         product.printInfo();
         customer.printInfo();
     }
+    public double getTotal(){
+        return product.getPrice();
+    }
 }
