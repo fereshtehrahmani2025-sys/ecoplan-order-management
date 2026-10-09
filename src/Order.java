@@ -35,4 +35,7 @@ public class Order {
             System.out.println("Order "+ id  +  "  cannnot be cancelled.");
         }
     }
+    public int getId(){
+        return id;
+    }
 }

@@ -8,4 +8,12 @@ public class OrderService {
     public ArrayList<Order> getAllOrder() {
         return orders;
     }
+    public Order findOrderById(int id){
+        for (Order order:orders){
+            if (order.getId()==id){
+                return order;
+            }
+        }
+        return null;
+    }
 }
