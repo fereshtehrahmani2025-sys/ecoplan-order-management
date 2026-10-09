@@ -13,7 +13,10 @@ public class Main {
         ArrayList<Order>orders=new ArrayList<>();
         orders.add(order1);
         orders.add(order2);
+        order2.cancelOrder();
+        System.out.println("Order 102 status: "+ order2.getStatus());
         order1.setStatus(OrderStatus.SHIPPED);
+        order1.cancelOrder();
         if (order1.getStatus()==OrderStatus.SHIPPED){
             System.out.println("Order 101 has been shipped");
         }

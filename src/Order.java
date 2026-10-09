@@ -12,8 +12,8 @@ public class Order {
         this.status=OrderStatus.PENDING;
     }
     public void printInfo(){
-        System.out.println("Order ID: "+id);
-        System.out.println("Order Status: "+status);
+        System.out.println("Order ID: "+ id);
+        System.out.println("Order Status: "+ status);
         product.printInfo();
         customer.printInfo();
     }
@@ -25,5 +25,14 @@ public class Order {
     }
     public OrderStatus getStatus(){
         return status;
+    }
+    public void cancelOrder(){
+        if (status==OrderStatus.PENDING){
+            status=OrderStatus.CANCELLED;
+            System.out.println("Order "+ id  +  "  cancelled successfully.");
+        }
+        else {
+            System.out.println("Order "+ id  +  "  cannnot be cancelled.");
+        }
     }
 }
