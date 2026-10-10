@@ -25,6 +25,8 @@ A Java-based Order Management System developed as a learning project to practice
 - Product.java - Product information
 - Order.java - Order details
 - Main.java - Application entry point
+- - OrderService.java - Handles order management operations
+- OrderStatus.java - Defines the possible order statuses
 
 ## How to Run
 
@@ -43,4 +45,4 @@ A Java-based Order Management System developed as a learning project to practice
 
 ## Project Status
 
-In development.
+Completed (Java OOP version).
